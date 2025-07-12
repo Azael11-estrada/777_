@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>777_</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: monospace;
+      color: white;
+    }
+    video#bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 20vh;
+      text-shadow: 0 0 8px #000;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    .glitch {
+      font-size: 3rem;
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% { transform: skew(0deg); }
+      20% { transform: skew(-3deg); }
+      40% { transform: skew(3deg); }
+      60% { transform: skew(-2deg); }
+      80% { transform: skew(2deg); }
+      100% { transform: skew(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🎥 Video de fondo -->
+  <video id="bg-video" autoplay loop playsinline>
+    <source src="bg.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <!-- 💬 Contenido -->
+  <div class="content">
+    <div class="glitch">777_</div>
+    <a href="https://discord.com/invite/K73JADkrBU" target="_blank">discord.gg/K73JADkrBU</a>
+    <a href="https://www.tiktok.com/@mrkat82" target="_blank">tiktok.com/@mrkat82</a>
+  </div>
+</body>
+</html>
